@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Tauri&family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Oswald:wght@600&display=swap');
+*{
+    font-family: 'Caudex', serif;
+}
+
+/*header navigation*/
+.cc-navbar {
+	background-color: rgba(0, 0, 0, 0.55);
+	font-family: 'Merriweather', serif;
+	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+	z-index: 99;
+}
+
+.cc-navbar .nav-link {
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.nav-link{
+	color: #fff;
+}
+
+.cc-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: #fff;
+}
+
+.btn-order {
+	color: var(--bs-teal);
+	border-color: var(--bs-teal);
+	transition: 0.5s;
+}
+
+.btn-orde {
+	color: var(--bs-teal);
+	transition: 0.5s;
+    font-size: larger;
+}
+
+.btn-orde:hover,
+.btn-orde:focus,
+.btn-orde:active {
+	color: rgb(189, 41, 41);
+}
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: var(--bs-teal);
+}
+
+/*header Banniere*/
+.banniere{
+    color: white;
+	background: url(../img/banniere/receptionists-5975962_1280.jpg) no-repeat;
+	background-size: cover;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banniere h1{
+    padding-top: 300px;
+}
+
+.container-fluid {
+	display: flex;
+    align-items: center;
+}
+
+.dropdown{
+	margin-top: 20px;
+}
+
+svg{
+	height: 50px;
+}
+
+.divers i{
+	size: 120px;
+}
+/*Les espaces*/
+.espace{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.espaces {
+    position: relative;
+    /* Positionnement de la légende au survol */
+    overflow: hidden;
+    width: 166px;
+    background-color: rgba(0,0,0,0);
+}
+
+/* Légende au survol */
+.espaces figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    padding: 0 10px;
+    opacity: 0;
+    bottom: -30%;
+    left: 0;
+    transition: all 0.6s ease;
+}
+
+.espaces:hover figcaption {
+    opacity: 1;
+    bottom: 0;
+}
+
+/*partie chambre*/
+.cc-chambre {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/page home/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 1658px;
+}
+
+.espaces img {
+    width: 100%;
+    height: 180px;
+}
+#bloc_activites {
+    width: 1340px;
+    height: 480px;
+    display: flex;
+}
+
+#vignette1 {
+    display: flex;
+    width: 276px;
+    height: 450px;
+    margin: 20px 0 20px 25px;
+}
+
+#photo1 {
+    width: 276px;
+    height: 390px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+}
+
+#intitule1 {
+    width: auto;
+    height: 60px;
+    margin-top: 390px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 20px;
+}
+
+#vignette2 {
+    display: flex;
+    height: 220px;
+    width: 300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 19px 20px 0 25px;
+}
+
+#photo2 {
+    width: 300px;
+    height: 170px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+}
+
+#intitule2 {
+    width: auto;
+    height: 27px;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 20px;
+}
+
+#vignette3 {
+    display: flex;
+    height: 195px;
+    width: 300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 35px 20px 0px 25px;
+}
+
+#photo3 {
+    width: 300px;
+    height: 144px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+}
+
+#intitule3 {
+    width: auto;
+    height: 136px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 20px;
+}
+
+#vignette4 {
+    display: flex;
+    height: 450px;
+    width: 287px;
+    margin-left: 25px;
+}
+
+#photo4 {
+    width: 287px;
+    height: 390px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+}
+
+#intitule4 {
+    width: 100%;
+    height: 60px;
+    margin-top: 390px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 20px;
+}
+
+
+figure {
+    box-shadow: 1px 1px 12px #797b80;
+    margin: 0;
+    border-radius: 25px;
+}
+
+figcaption {
+    height: 60px;
+    width: auto;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+/*Quelques mots des internautes*/
+.aime{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 40px;
+    color: #2c3e50;
+    justify-content: center;
+    text-align: center;
+}
+
+.aime h3{
+    font-family: 'The Nautigal', cursive;
+}
+
+.star{
+    color: rgb(209, 180, 16);
+}
+
+/*Infos Offres*/
+.info{
+    font-family: 'Tauri', sans-serif;
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.cercle{
+    text-align: center;
+    margin-left: auto;
+    background: #2c3e50;
+    border-radius: 50%;
+    max-width: 196px;
+    max-height: 231px;
+    padding: 20px;
+}
+
+/*Social*/
+.social{
+    color: #212529;
+    text-align: center;
+    font-size: x-large;
+}
+.e, .a, .t{
+    margin: 10px;
+    border-radius: 73px;
+    padding: 13px;
+}
+
+.e a, .a a, .t a{
+    color: white;
+}
+
+/*partie chambres.html*/
+.cc-chambres {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/page home/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 240px;
+}
+
+@media(max-device-width:480px){
+	.banniere{
+		width: 635px;
+	}
+	.d-flex{
+		flex-direction: column;
+		width: 300px;
+		height: max-content;
+		padding-top: 39px;
+	}
+
+    .cc-chambre{
+        height: max-content;
+        width: fit-content;
+    }
+
+    #vignette1, #vignette2, #vignette3, #vignette4{
+        width: auto;
+    }
+
+    #vignette1 img, #vignette2 img, #vignette3 img, #vignette4 img{
+        width: auto;
+    }
+
+	.espace{
+        max-width: 147px;
+    }
+
+	.img{
+		height: 220px;
+	}
+
+    .espaces img{
+		width: 10px;
+        height: 30px;
+	}
+
+    .info{
+        display: grid;
+    }
+
+
+}
